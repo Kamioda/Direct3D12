@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="PictureLoader">
+      <UniqueIdentifier>{5512a233-5b17-460e-9ddc-074472826057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3DCore">
+      <UniqueIdentifier>{446c3fb3-dfad-4758-a025-0ec672da084c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3DCore\PipelineObject">
+      <UniqueIdentifier>{803ec640-246f-45b8-a68c-5c6628f1767f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3DCore\Common">
+      <UniqueIdentifier>{e01ea211-4f97-4b75-8e7b-4ae54c14434c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct3DCore\Asset">
+      <UniqueIdentifier>{cd9a72b9-838b-4cd8-ba3d-5c8a64ea0a79}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -21,7 +36,52 @@
     <ClCompile Include="Window.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Direct3D12.cpp">
+    <ClCompile Include="JpgImage.cpp">
+      <Filter>PictureLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="PngImage.cpp">
+      <Filter>PictureLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12CommandQueue.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12Device.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12Factory.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12RenderTargetViewDescriptorHeap.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12ShaderResourceViewDescriptorHeap.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx12SwapChain.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12RootSignature.cpp">
+      <Filter>Direct3DCore\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12RenderTargetView.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12PipelineState.cpp">
+      <Filter>Direct3DCore\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12CommandAllocator.cpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12CommandList.cpp">
+      <Filter>Direct3DCore\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12VertexBuffer.cpp">
+      <Filter>Direct3DCore\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12Fence.cpp">
+      <Filter>Direct3DCore\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="MSXMLRead.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,11 +89,51 @@
     <ClInclude Include="Window.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Direct3D12.hpp">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ComPtr.hpp">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="PictureLoad.hpp">
+      <Filter>PictureLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D12PipelineObject.hpp">
+      <Filter>Direct3DCore\PipelineObject</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx12.h">
+      <Filter>Direct3DCore\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D12Object.hpp">
+      <Filter>Direct3DCore\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D12Asset.hpp">
+      <Filter>Direct3DCore\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D12ExceptionImpl.hpp">
+      <Filter>Direct3DCore\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MSXMLRead.hpp">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VSTexture2D.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+    <FxCompile Include="PSTexture2D.hlsl">
+      <Filter>リソース ファイル</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Texture2D.hlsli">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="config.ini">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="License.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
   </ItemGroup>
 </Project>
